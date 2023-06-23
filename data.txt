@@ -1,0 +1,12 @@
+First Name: &#1053;&#1072;&#1089;&#1090;&#1103;
+Last Name: &#1050;&#1086;&#1090;&#1080;&#1082;
+Email: anastasia-kotuk@ukr.net
+Password: 1234
+First Name: 
+Last Name: 
+Email: 
+Password: 
+First Name: &#1053;&#1072;&#1089;&#1090;&#1103;
+Last Name: &#1050;&#1086;&#1090;&#1080;&#1082;
+Email: admin@mail.com
+Password: qwer

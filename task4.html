@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <title></title>
+  <script>
+        function calculatesum() {
+      var input1 = parseFloat(document.getElementById("inputt").value);
+      var input2 = parseFloat(document.getElementById("input").value);
+      
+      var result = document.getElementById("result");
+      result.innerHTML = "";
+
+      if (!isNaN(input1) && !isNaN(input2)) {
+        var sum = input1 + input2;
+        result.innerHTML = "Sum: " + sum;
+      } else {
+        result.innerHTML = "Будь ласка, введіть числа для обчислення суми.";
+      }
+    }
+    function calculate() {
+      var input1 = parseFloat(document.getElementById("inputt").value);
+      var input2 = parseFloat(document.getElementById("input").value);
+      
+      var result = document.getElementById("result");
+      result.innerHTML = "";
+
+      if (!isNaN(input1) && !isNaN(input2)) {
+        var res = input1 - input2;
+        result.innerHTML = "Difference" + res;
+      } else {
+        result.innerHTML = "Будь ласка, введіть числа для обчислення суми.";
+      }
+    }
+  </script>
+</head>
+<body>
+    <label for="input">Numbers:</label>
+    <input type="number" id="inputt">
+    <input type="number" id="input">
+  
+    <button onclick="calculatesum()">+</button>
+    <button onclick="calculate()">-</button>
+    
+    <div id="result"></div>
+    <a href="task3.html"><button >Task 3</button></a>
+    <a href="task5.html"><button>Task 5</button></a>
+    <!-- <a href="index.html"><button >Завдання 1</button></a> -->
+</body>
+</html>

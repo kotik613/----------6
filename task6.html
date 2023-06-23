@@ -1,0 +1,54 @@
+<!-- <FORM METHOD="GET">
+    <script>document.write('Which of the truth tables is given<br>');</script>
+    <img src="photo_2023-06-17_23-09-32.jpg" alt="Зображення"><br><br>
+    <SELECT NAME="Color" SIZE=3 MULTIPLE>
+    <OPTION > And
+    <OPTION SELECTED >And-Not
+    <OPTION>Or-Not
+    <OPTION SELECTED>including or
+    <OPTION>including or not
+    </SELECT>
+    <INPUT TYPE="SUBMIT" VALUE="Submit">  -->
+        <!DOCTYPE html>
+<html>
+<head>
+  
+  <script>
+    function checkAnswer() {
+        var selectedOptions = document.querySelectorAll('select[name="Color"] option:checked');
+      var correctAnswer = "including or";
+
+      var selectedValues = [];
+      for (var i = 0; i < selectedOptions.length; i++) {
+        selectedValues.push(selectedOptions[i].value);
+      }
+
+      if (selectedValues.length === 1 && selectedValues[0] === correctAnswer) {
+        alert("True");
+      } else {
+        alert("False");
+      }
+    }
+  </script>
+</head>
+<body>
+  
+
+  <form method="get" ondblclick="checkAnswer()">
+    <script>document.write('Which of the truth tables is given<br>');</script>
+    <img src="photo_2023-06-17_23-09-32.jpg" alt="Зображення"><br><br>
+
+    <select name="Color" size="3" multiple>
+      <option>And</option>
+      <option selected>And-Not</option>
+      <option>Or-Not</option>
+      <option selected>including or</option>
+      <option>including or not</option>
+    </select>
+
+    <!-- <input type="submit" value="Submit"> -->
+  </form>
+  <a href="task5.html"><button>Task 5</button></a>
+  <a href="index.html"><button >Task 1</button></a>
+</body>
+</html>
